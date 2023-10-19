@@ -1,13 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScriptProject</title>
+    <title>JavaScript Projects | Chinthoju Shivakumar</title>
+    <link rel="shortcut icon" href="./assets/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <a href="colorPicker" class="btn btn-primary">ColorPicker</a>
-    <a href="stopWatch" class="btn btn-primary">stopwatch</a>
-    <a href="Counter" class="btn btn-primary">Counter</a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h2>JavaScript Projects</h2>
+            </div>
+            <div class="nav-items">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#simple-project">Basic</a></li>
+                    <li class="nav-link"><a href="#project">Projects</a></li>
+                    <li class="nav-link"><a href="#api">Api Projects</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+
+
+    <section class="container home-sec" id="home">
+        <div class="container-fluid home">
+            <div class="HomeTitle">
+                <h1>Welcome to <span>JavaScript</span> Projects</h1>
+                <div class="cursor" id="cursor"></div>
+                <div class="text" id="text"></div>
+                <button type="button" class="btn"><a class="nav-link" href="#simple-project">Get Started &gt;</a></button>
+            </div>
+            <div class="HomeImage">
+                <img class="img" src="./assets/HomeImage.jpg" alt="Home">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Basic Projects Section -->
+
+
+    <section class="container proj" id="simple-project">
+        <div class="project-title">
+            <h1>Some <span>Basic Projects</span> Made Using JavaScript</h1>
+        </div>
+        <div class="container-fluid project">
+            <div class="basicProjects">
+                <div>
+                    <img src="./assets/counter.jpg" alt="Counter" class="basicImage">
+                </div>
+                <div class="project-1">
+                    <h2>Simple Counter</h2>
+                    <p>It's A Basic Counter Made Using Increment And Decrement Functionality. Also It Prevents Negative
+                        Values. </p>
+                    <div class="buttons">
+                        <a class="btn basic-btn" href="./Basic_Projects/Counter/index.html"><i class="bi bi-eye-fill"></i>&nbsp;View</a>
+                        <a class="btn basic-btn" href="#action">Code &nbsp; &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid project">
+            <div class="basicProjects">
+                <div>
+                    <img src="./assets/DigitalClock.jpg" alt="DigitalClock" class="basicImage">
+                </div>
+                <div class="project-2">
+                    <h2>Digital Clock | Random Background Color Change</h2>
+                    <p>Displays Live Hour, Minutes, Seconds And Milli-Seconds. Random Background Changing Effect. </p>
+                    <div class="buttons">
+                        <a class="btn basic-btn" href="./Basic_Projects/stopWatch/index.html"><i class="bi bi-eye-fill"></i>&nbsp;View</a>
+                        <a class="btn basic-btn" href="#action">Code &nbsp; &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid project">
+            <div class="basicProjects">
+                <div>
+                    <img src="./assets/colorGenerator.jpg" alt="ColorGenerator" class="basicImage">
+                </div>
+                <div class="project-3">
+                    <h2>Background Color Switcher</h2>
+                    <p>It Simply Switches The Background Color As User Clicks On The Button. Displayes Random Color
+                        HexaCode</p>
+                    <div class="buttons">
+                        <a class="btn basic-btn" href="./Basic_Projects/colorPicker/index.html"><i class="bi bi-eye-fill"></i>&nbsp;View</a>
+                        <a class="btn basic-btn" href="#action">Code &nbsp; &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+
+    <section class="container Project" id="project">
+        <div class="project-title">
+            <h1>Overview of <span>Projects</span> Made Using JavaScript</h1>
+        </div>
+        <div class="Projects-card">
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets//landingPage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Simple E-Commerce</h5>
+                    <p class="card-text">Latest Mobile with extra new Features Adertisement Page.</p>
+                    <div class="buttons">
+                        <a href="./Projects/landing_page/landingpage.html" class="btn btn-primary">View <i class="bi bi-eye-fill"></i></a>
+                        <a href="./Projects//todo/" class="btn btn-primary">Code &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/Todo.png" class="card-img-top" alt="Todo-list">
+                <div class="card-body">
+                    <h5 class="card-title">Todo-List</h5>
+                    <p class="card-text">Simple Todo List Webapp With Modern UI.</p>
+                    <div class="buttons">
+                        <a href="./Projects/todo/todo.html" class="btn btn-primary">View <i class="bi bi-eye-fill"></i></a>
+                        <a href="./Projects/todo/" class="btn btn-primary">Code &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+    </section>
+
+
+    <!-- API Project Section -->
+
+    <section class="container Project Api-Project" id="api">
+        <div class="project-title">
+            <h1>Projects Based on <span>Api</span> Calling<h1>
+        </div>
+        <div class="Projects-card">
+            <div class="card api-card" style="width: 18rem;">
+                <img src="./assets/Wheather.jpg" class="card-img-top" alt="whetherImage">
+                <h3>Whether App</h3>
+                <div class="card-body card-dischide">
+                    <div class="api-titlt-disc">
+                        <h5 class="card-title">Wheather</h5>
+                        <p class="card-text">It's A Simple Web Page Which Fetch Live Weather Data Of The City Entered By The User Using Open
+                            Weather API.</p>
+                    </div>
+                    <div class="api-buttons">
+                        <a href="./Api_Projects/whether_app/whetherapp.html" class="btn btn-primary">View <i class="bi bi-eye-fill"></i></a>
+                        <a href="./Projects//todo/" class="btn btn-primary">Code &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card api-card" style="width: 18rem;">
+                <img src="./assets/country.png" class="card-img-top" alt="Country search image">
+                <h3>Country Search</h3>
+                <div class="card-body card-dischide">
+                    <div class="api-titlt-disc">
+                        <h5 class="card-title">Country Search</h5>
+                        <p class="card-text">Simple Country Search App Built Using HTML, Bootstrap And JavaScript. API Used Rest Countries.</p>
+                    </div>
+                    <div class="api-buttons">
+                        <a href="./Api_Projects/CountrySearch/index.html" class="btn btn-primary">View <i
+                                class="bi bi-eye-fill"></i></a>
+                        <a href="./Projects//todo/" class="btn btn-primary">Code &lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+
+    <footer id="contact">
+        <div class="container footer-disc">
+            <h5> Copyright &copy; All Rights Reserved | JavaScript Projects </h5>
+            <p>Made by <strong>Chinthoju Shivakumar</strong></p>
+            <div>
+                <a class="hyperNavigate" href="https://www.linkedin.com/in/shivakumarchinthoju1207/"><i
+                        class="bi bi-linkedin"></i></a>
+                <a class="hyperNavigate" href="https://github.com/ChinthojouShivaKumar"><i class="bi bi-github"></i></a>
+                <a class="hyperNavigate" href="mailto:shivakumarchinthoju@gmail.com"><i
+                        class="bi bi-envelope-at"></i></a>
+            </div>
+
+        </div>
+        <p>Last Updated: <strong>13-10-2023</strong></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>

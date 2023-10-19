@@ -1,0 +1,7 @@
+let a = document.querySelector('form')
+console.log(a);
+
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+    console.log(e);
+})

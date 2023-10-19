@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Montserrat:ital,wght@1,600&family=Poppins:wght@500;900&display=swap');
+
+body{
+    font-family: Poppins;
+    
+}
+
+.container{
+    width: 650px;
+    height: 600px;
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px 2px;
+}
+.container1{
+    width: fit-content;
+    position: relative;
+    top: 10px; 
+    left: 200px;
+}
+.box{
+    width: 650px;
+    height: 500px;
+    position: absolute;
+    left: 10px;
+    
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    top: 25px;
+    left: 15px;
+    background-color:violet;
+    border: 1px solid grey;
+}
+.container2>h1 {
+    width: fit-content;
+    position: relative;
+    top: 150px;
+    left: 10px;
+}
+.container2>p{
+    width: fit-content;
+    position: relative;
+    top: 150px;
+    left: 10px;
+} 
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    float: right;
+    position: absolute;
+    left: 315px;
+    top: 25px;
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.container3>label{
+    position: relative;
+    top: 10px;
+    left: 25px;
+    line-height: 33px;
+}
+.container3>input{
+    width: 250px;
+    position: relative;
+    top: 10px;
+    left: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 20px;
+    line-height: 30px;
+
+    
+}
+
+.container3 span{
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.container3>.check{
+    position: relative;
+    top:20px;
+}
+
+.container3>.btn{
+    position: relative;
+    top: 30px;
+    font-weight: bolder;
+}
+
+p{
+    position: relative;
+    top: 490px;
+    left: 130px;
+}

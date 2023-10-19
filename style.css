@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900;1000&family=Poppins:wght@600&family=Sofia+Sans+Condensed:ital,wght@1,600&display=swap');
+
+h1 {
+    font-family: Nunito;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    /* background-color: blue; */
+}
+
+.navbar-brand h2 {
+    color: rgb(53, 53, 53);
+}
+
+.navbar-brand h2:hover {
+    color: black;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.nav-items {
+    margin-right: 50px;
+    /* background-color: azure; */
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    display: inline-flex;
+    transition: border-color 0.3s;
+
+}
+
+li a:hover {
+    color: black;
+    border-color: black;
+
+    animation: expandBorder 0.3s forwards;
+
+}
+
+@keyframes expandBorder {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 100%;
+
+    }
+}
+
+
+/* Home Section Starts */
+
+
+
+.btn {
+    font-weight: 600 !important;
+    background-color: rgb(235, 171, 11) !important;
+    border: transparent !important;
+}
+
+.HomeTitle {
+    font-family: Nunito;
+    line-height: 60px;
+
+}
+
+.home-sec {
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+.btn:hover {
+    background-color: rgb(215, 176, 77) !important;
+}
+
+.img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px;
+    animation: jump 3s infinite;
+
+}
+
+.text {
+    color: orangered;
+}
+
+@keyframes jump {
+
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+.home {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 150px;
+}
+
+
+/* Home section ends */
+
+/* Basic Project Section */
+
+.proj {
+    padding: 20px 0px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 890px;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+    max-width: 750px;
+    max-height: 250px;
+    /* background-color: brown; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+}
+
+.basicImage {
+    max-width: 110px;
+    border-radius: 10px;
+}
+
+.basicProjects {
+    max-width: 950px;
+    max-height: fit-content;
+    padding: 20px;
+    display: flex;
+    background-color: #36846b;
+    box-shadow: 0px 0px 2px 0px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.basicProjects:hover {
+    transition: 0.3s;
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 0px;
+}
+
+span {
+    color: gold;
+    font-family: Nunito;
+    font-weight: 800;
+}
+
+.basic-btn {
+    border: 2px solid grey !important;
+    background-color: transparent !important;
+}
+
+.basic-btn:hover {
+    color: rgb(43, 42, 42) !important;
+    border: none !important;
+    background-color: #18e4b5 !important;
+}
+
+/* Basic Project Section ends */
+
+/* Project Section */
+
+
+
+.Project {
+    background-color: whitesmoke;
+    padding: 20px 0px;
+    margin-top: 50px !important;
+}
+
+.Projects-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-dischide {
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* height: 250px; */
+}
+
+h3 {
+    text-align: center;
+}
+
+/* .card:hover .card-dischide{
+    height: 150px;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    background-color: yellow;
+    transition: 0.3s ease-in-out;
+    animation: slidedown 0.3s forwards;
+    
+}
+
+@keyframes slidedown {
+
+    0%{
+        bottom: 270px;
+    }
+    100%{
+        bottom: 205px;
+        border-radius: 5px;
+    }
+    
+} */
+.card-title {
+    color: darkblue !important;
+}
+
+
+
+
+/* api project starts */
+
+.Api-Project {
+    background-color: white;
+}
+
+
+.api-card:hover {
+    height: 210px;
+    /* transition: 0.3s ease-in-out;
+    transform: scale(1.02); */
+}
+
+.api-card:hover .card-dischide {
+    padding: 5px 3px;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    background-color: darkgray;
+    transition: 0.3s ease-in-out;
+    animation: slidedown 0.3s forwards;
+}
+
+.api-card img {
+    width: fit-content;
+    height: 150px;
+    
+}
+
+
+.api-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+@keyframes slidedown {
+
+    0% {
+        bottom: 270px;
+
+    }
+
+    100% {
+        bottom: 190px;
+
+
+        border-radius: 5px;
+    }
+
+}
+
+/* footer section */
+
+footer {
+    background-color: rgb(210, 237, 100);
+    padding: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-disc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.hyperNavigate {
+    font-size: xx-large;
+    margin: 0px 5px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 915px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        padding: 100px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+        height: 550px;
+        padding: 80px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        padding: 100px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+        height: 650px;
+        padding: 50px;
+
+    }
+
+
+    /* .img{
+        width: 100%;
+        height: 10%;
+    } */
+    .basicProjects {
+        flex-direction: column;
+    }
+
+
+    .footer-disc {
+
+        flex-direction: column;
+
+
+    }
+
+    h2 {
+        font-size: xx-small;
+    }
+
+
+}
