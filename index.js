@@ -11,6 +11,24 @@ var text = document.querySelector('#text')
 var cursor = document.querySelector("#cursor")
 
 
+let hamburger = document.getElementById("hamburger")
+let navbar = document.getElementById("navbar")
+let navItems = document.getElementById("nav-items")
+let navbarBrand = document.getElementById("navbar-brand")
+// let closeIcon = document.getElementById("closee")
+
+hamburger.addEventListener("click", e=>{
+    navbar.classList.add("hidden-nav-item")
+    navItems.classList.add("hidden-nav-item")
+    // navbar.style.transform = "translateX(0px)"
+    hamburger.style.display = "none"
+    // closeIcon.style.display = "block"
+    navbar.style.justifyContent = "space-between"
+})
+
+ 
+
+
 
 // typing effect
 

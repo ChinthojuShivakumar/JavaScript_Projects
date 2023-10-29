@@ -21,6 +21,7 @@ h1 {
 }
 
 .navbar-brand h2:hover {
+    cursor: pointer;
     color: black;
     transition: 0.3s ease-in-out;
     transform: scale(1.05);
@@ -64,6 +65,11 @@ li a:hover {
         width: 100%;
 
     }
+}
+
+
+.hamburger {
+    display: none;
 }
 
 
@@ -300,9 +306,10 @@ h3 {
 }
 
 .api-card img {
-    width: fit-content;
+    /* width: fit-content; */
+    object-fit: cover;
     height: 150px;
-    
+
 }
 
 
@@ -357,14 +364,26 @@ footer {
 @media screen and (min-width: 600px) and (max-width: 915px) {
 
     .navbar {
-        flex-direction: column;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        /* justify-content: flex-start; */
     }
 
     .nav-items {
         margin-top: 30px;
         padding: 100px;
+        display: none;
     }
 
+    .hidden-nav-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      
+    }
+
+   
     .nav-links {
         flex-direction: column;
     }
@@ -375,20 +394,62 @@ footer {
         padding: 80px;
     }
 
+    .hamburger {
+        display: block;
+        font-size: x-large;
+        margin-right: 30px;
+        font-weight: 800;
+        border: 2px solid black;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .hamburger i {
+        color: black;
+    }
+
+    .close {
+        visibility: visible;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column;
+        justify-content: space-around;
+        /* flex-direction: column; */
     }
 
     .nav-items {
         margin-top: 30px;
         padding: 100px;
+        display: none;
+
     }
 
     .nav-links {
         flex-direction: column;
+    }
+
+    .hidden-nav-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+
+   
+
+    .hamburger {
+        display: block;
+        font-size: x-large;
+        margin-right: 30px;
+        font-weight: 800;
+    }
+
+    .hamburger i {
+        color: black;
     }
 
     .home {
