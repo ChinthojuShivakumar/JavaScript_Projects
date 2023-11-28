@@ -15,15 +15,27 @@ let hamburger = document.getElementById("hamburger")
 let navbar = document.getElementById("navbar")
 let navItems = document.getElementById("nav-items")
 let navbarBrand = document.getElementById("navbar-brand")
-// let closeIcon = document.getElementById("closee")
+let closeIcon = document.getElementById("closee")
 
 hamburger.addEventListener("click", e=>{
-    navbar.classList.add("hidden-nav-item")
-    navItems.classList.add("hidden-nav-item")
-    // navbar.style.transform = "translateX(0px)"
-    hamburger.style.display = "none"
+    // navbar.style.height = '550px'
+    // navbar.style.flexDirection = "column"
+    // navbar.style.transition = "all 0.3s ease-in-out"
+    // navItems.style.display = "block"
+    // hamburger.style.display = "none"
     // closeIcon.style.display = "block"
-    navbar.style.justifyContent = "space-between"
+    navbar.classList.add("navbarJavaScript")
+    navItems.classList.add("navItemJavaScript")
+    hamburger.classList.add("hamburgerJavaScript")
+    closeIcon.classList.add("closeJavaScript")
+    
+})
+
+closeIcon.addEventListener("click", ()=>{
+    navbar.classList.remove("navbarJavaScript")
+    navItems.classList.remove("navItemJavaScript")
+    hamburger.classList.remove("hamburgerJavaScript")
+    closeIcon.classList.remove("closeJavaScript")
 })
 
  

@@ -9,6 +9,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     background-color: yellow;
+    transition: height 0.3s ease-in-out;
 }
 
 .navbar-brand {
@@ -75,7 +76,9 @@ li a:hover {
 
 /* Home Section Starts */
 
-
+.close {
+    display: none;
+}
 
 .btn {
     font-weight: 600 !important;
@@ -367,23 +370,17 @@ footer {
         /* flex-direction: column; */
         justify-content: space-between;
         /* justify-content: flex-start; */
+        transition: height 0.3s ease-in-out;
     }
 
     .nav-items {
-        margin-top: 30px;
-        padding: 100px;
+        /* margin-top: 30px;
+        padding: 100px; */
         display: none;
     }
 
-    .hidden-nav-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-      
-    }
 
-   
+
     .nav-links {
         flex-direction: column;
     }
@@ -400,7 +397,7 @@ footer {
         margin-right: 30px;
         font-weight: 800;
         border: 2px solid black;
-        padding: 10px 15px;
+        padding: 2px 15px;
         border-radius: 10px;
     }
 
@@ -408,21 +405,40 @@ footer {
         color: black;
     }
 
-    .close {
-        visibility: visible;
+    .navbarJavaScript {
+        height: 550px;
+        flex-direction: column;
+        transition: height 0.3s ease-in-out;
+        letter-spacing: 2px;
+    }
+
+    .navItemJavaScript {
+        display: block;
+    }
+
+    .hamburgerJavaScript {
+        display: none;
+    }
+
+    .closeJavaScript {
+        display: block;
+        font-size: xx-large;
+        font-weight: 800;
     }
 
 }
 
 @media screen and (max-width: 600px) {
     .navbar {
-        justify-content: space-around;
+        justify-content: space-between;
         /* flex-direction: column; */
+        font-size: medium;
+        transition: height 0.3s ease-in-out;
     }
 
     .nav-items {
-        margin-top: 30px;
-        padding: 100px;
+        /* margin-top: 30px; */
+        /* padding: 100px; */
         display: none;
 
     }
@@ -431,15 +447,7 @@ footer {
         flex-direction: column;
     }
 
-    .hidden-nav-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    
-    }
 
-   
 
     .hamburger {
         display: block;
@@ -457,6 +465,27 @@ footer {
         height: 650px;
         padding: 50px;
 
+    }
+
+
+    .navbarJavaScript {
+        height: 550px;
+        flex-direction: column;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .navItemJavaScript {
+        display: block;
+    }
+
+    .hamburgerJavaScript {
+        display: none;
+    }
+
+    .closeJavaScript {
+        display: block;
+        font-size: x-large;
+        font-weight: 800;
     }
 
 
